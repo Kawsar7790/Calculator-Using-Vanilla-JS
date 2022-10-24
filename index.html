@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <table class="calculator">
+        <tr>
+            <td colspan="4">
+                <input class="calculator-display" type="text" id="display" disabled />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button" class="recheck action" value="R">R</button>
+            </td>
+            <td><button type="button" value="%" class="action percent">%</button></td>
+            <td><button type="button" value="AC" class="action clear">AC</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value="7" class="value">7</button></td>
+            <td><button type="button" value="8" class="value">8</button></td>
+            <td><button type="button" value="9" class="value">9</button></td>
+            <td><button type="button" value="/" class="calc action">÷</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value="4" class="value">4</button></td>
+            <td><button type="button" value="5" class="value">5</button></td>
+            <td><button type="button" value="6" class="value">6</button></td>
+            <td><button type="button" value="*" class="calc action">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value="1" class="value">1</button></td>
+            <td><button type="button" value="2" class="value">2</button></td>
+            <td><button type="button" value="3" class="value">3</button></td>
+            <td><button type="button" value="-" class="calc action">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value="0" class="value">0</button></td>
+            <td><button type="button" value="." class="dot">.</button></td>
+            <td><button type="button" value="=" class="equal">=</button></td>
+            <td><button type="button" value="+" class="calc action">+</button></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
