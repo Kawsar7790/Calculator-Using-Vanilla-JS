@@ -15,31 +15,22 @@ if (display.value.length == 0) {
 digitvalues.forEach( digitvalue => {
     digitvalue.addEventListener('click' , function(e) {
         let display_value = display.value;
-
-        if(display_value.length > 1 && display_value.charAt(0) === '0' && display_value.charAt(1) === '.'){
-            console.log("Latest");
-            display_value += digitvalue;
-            console.log(display_value);
-        }
-        else{
+        let btnvalue = digitvalue.value;
+        if(display_value.length = 1 && display_value.charAt(0) === '0' && display_value.charAt(1) != '.'){
+            console.log('0 Logic');
             let zerovalue = display_value.charAt(0);
-            let replaced_value = display_value.replace(zerovalue,'');
+            let replaced_value = display_value.replace(zerovalue,btnvalue);
             display.value = replaced_value;
+            
         }
+        else {
+            console.log("basic");
+            display.value += btnvalue; 
+        }
+
        
     })
 });
-
-
-
-
-digitvalues.forEach( digitvalue => {
-    digitvalue.addEventListener('click' , function() {
-            let btnvalue = digitvalue.value;
-            display.value += btnvalue;    
-    })
-});
-
 
 
 recheck.addEventListener('click' , function() {
@@ -49,7 +40,6 @@ recheck.addEventListener('click' , function() {
         display.value = "0";
     }
 });
-
 
 
 clear.addEventListener('click' , function() {
