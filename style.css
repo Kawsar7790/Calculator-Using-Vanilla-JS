@@ -15,6 +15,7 @@
 }
 
 .value,
+.calc,
 .action,
 .equal ,
 .dot {
@@ -29,7 +30,7 @@
   width: 100%;
 }
 
-.action {
+.action ,.calc {
   background-color: lightgray;
 }
 
